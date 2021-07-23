@@ -1,0 +1,93 @@
+<app-header-other-pages id="top"></app-header-other-pages>
+<div _ngcontent-wqm-c47="" id="proceso" class="social-networks section-spacing-top pb-5">
+    <div _ngcontent-wqm-c47="" class="container">
+        <div _ngcontent-wqm-c47="" class="theme-title-one">
+            <h2 _ngcontent-wqm-c47="">TRABAJA CON NOSOTROS</h2>
+            <p _ngcontent-wqm-c47="" style="margin: 0 35px 40px 35px;">
+                Nos encontramos buscando talento para que se integren a nuestro equipo de trabajo.
+            </p>
+        </div>
+
+    </div>
+</div>
+<div class="work">
+    <div class="overlay">
+        <div class="container">
+            <div class="row text text-center">
+                <div class="col-sx-12 col-md-6 col-lg-6 pb-5">
+                    <div class="theme-title-one ">
+                        <h2>BOLSA DE TRABAJO</h2>
+                    </div>
+                    <!-- /.theme-title-one -->
+
+
+                    <p class="text-white pt-3 pl-5 pr-5 pb-3">
+                        Si estas interesado(a) en ser parte de nuestro equipo, envía tu currículum a la dirección de correo que aparece abajo.
+                    </p>
+
+                    <p class="text-white pl-5 pr-5">
+                        También puedes enviarnos un mensaje para brindarte mayor información sobre nuestras vacantes.
+                    </p>
+
+                    <h4 class="pb-2 pt-5 text-white">Email:</h4>
+                    <p class="text-white">contacto@cocaconsultores.com</p>
+                </div>
+                <!-- /.col- -->
+                <div class="col-sx-12 col-md-6 col-lg-6">
+                    <div class="quote-form">
+                        <form [formGroup]="workForm" (ngSubmit)="formSubmit(workForm.value)" class="theme-form-one">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12">
+                                    <input type="text" formControlName="nombre" placeholder="Nombre *">
+                                    <div *ngIf="workForm.controls['nombre'].invalid && workForm.controls['nombre'].touched" class="alert alert-danger">
+                                        <div *ngIf="workForm.controls['nombre'].errors.required">
+                                            Nombre es requerido.
+                                        </div>
+                                        <div *ngIf="workForm.controls['nombre'].errors.maxlength">
+                                            Has excedido el tamaño.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-12">
+                                    <input type="text" formControlName="whatsapp" placeholder="Whatsapp *">
+                                    <div *ngIf="workForm.controls['whatsapp'].invalid && workForm.controls['whatsapp'].touched" class="alert alert-danger">
+                                        <div *ngIf="workForm.controls['whatsapp'].errors.required">
+                                            Whatsapp es requerido.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-12">
+                                    <input type="email" formControlName="email" placeholder="Email *">
+                                    <div *ngIf="workForm.controls['email'].invalid && workForm.controls['email'].touched" class="alert alert-danger">
+                                        <div *ngIf="workForm.controls['email'].errors.required">
+                                            Email es requerido.
+                                        </div>
+                                        <div *ngIf="contactForm.controls['email'].errors.email">
+                                            Email debe tener formato válido.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-12">
+                                    <textarea placeholder="Mensaje" formControlName="mensaje"></textarea>
+                                    <div *ngIf="workForm.controls['mensaje'].invalid && workForm.controls['mensaje'].touched" class="alert alert-danger">
+                                        <div *ngIf="workForm.controls['mensaje'].errors.required">
+                                            Mensaje es requerido.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                            <button type="submit" [disabled]="!workForm.valid" class="theme-button-one">ENVIAR</button>
+                        </form>
+                    </div>
+                    <!-- /.quote-form -->
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.overlay -->
+</div>
+
+<app-footer></app-footer>

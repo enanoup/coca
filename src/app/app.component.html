@@ -1,0 +1,18 @@
+<div class="main-page-wrapper">
+
+
+    <!-- ===================================================
+				Loading Transition
+			==================================================== -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+
+    <router-outlet (onActivate)="onActivate($event)"></router-outlet>
+
+    <!-- Scroll Top Button -->
+    <button class="scroll-top tran3s">
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </button>
+
+</div>

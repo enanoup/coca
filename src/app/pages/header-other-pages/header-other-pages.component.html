@@ -1,0 +1,80 @@
+<!-- 
+	=============================================
+				Theme Header One
+	============================================== 
+-->
+<header class="header-one">
+    <div class="top-header">
+        <div class="container clearfix">
+            <div class="logo float-left">
+                <a href="index.html"><img style="width: 240px;" class="img-fluid" src="assets/images/logo/coca_color_med.png" alt=""></a>
+            </div>
+            <div class="address-wrapper float-right">
+                <ul>
+                    <li class="address">
+                        <i class="icon flaticon-placeholder"></i>
+                        <h6 style="font-size: 18px !important;">Ubicación:</h6>
+                        <p style="font-size: 15px;">Cuadrante de San Francisco #25, CDMX.</p>
+                    </li>
+                    <li class="address">
+                        <i class="icon flaticon-multimedia"></i>
+                        <h6 style="font-size: 18px !important;">Mail:</h6>
+                        <p style="font-size: 15px;">contacto@cocaconsultores.com</p>
+                    </li>
+                    <li class="quotes"><a routerLink="/home" fragment="contacto">CONTÁCTANOS</a></li>
+                </ul>
+            </div>
+            <!-- /.address-wrapper -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.top-header -->
+    <div class="theme-menu-wrapper">
+        <div class="container">
+            <div class="bg-wrapper clearfix">
+                <!-- ============== Menu Warpper ================ -->
+                <div class="menu-wrapper float-left">
+                    <nav id="mega-menu-holder" class="clearfix">
+                        <ul class="clearfix">
+                            <li [class.active]="(activeFragment | async) === '' || (activeFragment | async) ==='top'"><a routerLink="/home" fragment="top">Inicio</a></li>
+                            <li><a routerLink="/about" routerLinkActive="active-link">Somos</a></li>
+                            <li [class.active]="(activeFragment | async) ==='soluciones'"><a href="#soluciones">Soluciones</a></li>
+                            <li [class.active]="(activeFragment | async) ==='proceso'"><a href="#proceso">Hacemos</a></li>
+                            <li [class.active]="(activeFragment | async) ==='capacitaciones'"><a href="#capacitaciones">Capacitaciones</a></li>
+                            <li [class.active]="(activeFragment | async) ==='contacto'"><a href="#contacto">Contacto</a></li>
+                            <li><a routerLink="/btrabajo" routerLinkActive="active-link">Bolsa de Trabajo</a></li>
+                        </ul>
+                    </nav>
+                    <!-- /#mega-menu-holder -->
+                </div>
+                <!-- /.menu-wrapper -->
+
+                <div class="right-widget float-right">
+                    <ul>
+                        <li class="social-icon">
+                            <ul>
+                                <li><a href="https://www.facebook.com/Coca-Consultores-102537535188470/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/cocaconsultores/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/hc-inteligencia-en-personal-s-a-de-c-v/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class="search-option">
+                            <div class="dropdown">
+                                <button type="button" class="dropdown-toggle" data-toggle="dropdown"><i class="" aria-hidden="true"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.right-widget -->
+            </div>
+            <!-- /.bg-wrapper -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.theme-menu-wrapper -->
+
+
+
+    <!-- /.theme-menu-wrapper -->
+</header>
+<!-- /.header-one -->

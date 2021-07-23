@@ -1,0 +1,102 @@
+/* Recuerda que el contenedor tiene que ser relative para que el modal se muestre solo dentro del contenedor */
+
+.our-solution {
+    position: relative;
+}
+
+.modal-funcion {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    /* Stay in place */
+    z-index: 20;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    overflow: hidden;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.single-solution-block a {
+    cursor: pointer;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content-funcion {
+    background-color: #fefefe;
+    margin: 18% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    overflow-y: auto !important;
+}
+
+@media (max-width: 990px) {
+    .modal-funcion {
+        position: fixed;
+    }
+    .modal-content-funcion {
+        margin: 18% auto;
+        width: 90% !important;
+        height: 480px;
+    }
+    .modal-content-funcion {
+        margin: 30% auto;
+    }
+    .modal-background {
+        height: 700px !important;
+    }
+    .vertical-center-work {
+        margin: 0 auto !important;
+        top: -60px !important;
+    }
+    .modal-background {
+        background-size: cover !important;
+        background-position: center !important;
+    }
+}
+
+.modal-content-funcion {
+    width: 50%;
+}
+
+
+/** SERVICIOS CSS ADICIONAL **/
+
+.servicios-css {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.servicios-css h3 {
+    margin-top: 12px;
+}
+
+.horizontal-funcionalidad {
+    margin: 4px !important;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 40px;
+}
+
+.disable-link {
+    pointer-events: none;
+    cursor: default;
+}
+
+.link-capacitaciones {
+    cursor: pointer;
+}
